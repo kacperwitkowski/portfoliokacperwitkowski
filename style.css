@@ -1,0 +1,745 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* wstep */
+
+header {
+  position: relative;
+  background-color: #29a6dc;
+  height: 100vh;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header>* {
+  position: absolute;
+}
+
+header img {
+  position: absolute;
+  bottom: -3.5%;
+  right: -3%;
+  height: 60%;
+}
+
+header .welcome {
+  position: relative;
+  top: 50px;
+  font-family: Saira Semi condensed, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+header button {
+  font-family: Saira, sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  font-size: 12px;
+  border: 2px solid white;
+}
+
+/* w czym tworze */
+.feature {
+  width: 100%;
+}
+
+.features {
+  margin-top: 50px;
+  padding: 5%;
+  text-align: center;
+}
+
+.features h1 {
+  font-family: Saira Semi condensed, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.features h2 {
+  font-family: Saira Semi condensed, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.features img {
+  width: 100%;
+  margin: 5px 0;
+  max-width: 375px;
+}
+
+.features p {
+  font-family: saira, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+@media (min-width: 360px) {
+  header img {
+    height: 50%;
+    bottom: -2.1%;
+    right: -3.9%;
+  }
+
+  .features {
+    font-size: 16px;
+  }
+
+  .features h1 {
+    font-size: 28px;
+  }
+
+  .features h2 {
+    font-size: 24px;
+  }
+}
+
+@media (orientation: landscape) {
+  header img {
+    bottom: -3.5%;
+    right: -2%;
+    height: 80%;
+  }
+
+  header div.welcome {
+    left: -15%;
+    top: 20%;
+  }
+
+  header button {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 620px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  header h2 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 40px;
+    margin-top: -3%;
+  }
+
+  header button {
+    line-height: 42px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  header h2 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 46px;
+    margin-top: -2%;
+  }
+
+  header button {
+    line-height: 48px;
+    font-size: 25px;
+  }
+
+  .features h1 {
+    font-size: 46px;
+  }
+
+  .features h2 {
+    font-size: 29px;
+  }
+
+  .features p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature {
+    float: left;
+    width: 33%;
+    padding: 1px;
+  }
+
+  .features {
+    max-width: 1600px;
+    margin: 50px auto 0;
+    padding: 5% 2%;
+    text-align: center;
+  }
+
+  p.description {
+    padding: 0 20px;
+    font-size: 22px;
+  }
+
+  .features h2 {
+    font-size: 22px;
+  }
+
+  header img {
+    height: 75%;
+    bottom: -4%;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 50px;
+  }
+
+  header p {
+    font-size: 60px;
+    margin-top: 1%;
+  }
+
+  header button {
+    line-height: 70px;
+    font-size: 33px;
+    margin-top: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  @media (min-width: 1600px) {
+    header h1 {
+      font-size: 50px;
+    }
+
+    header h2 {
+      font-size: 50px;
+    }
+
+    header p {
+      font-size: 60px;
+      margin-top: 1%;
+    }
+
+    header button {
+      line-height: 60px;
+      font-size: 29px;
+      padding: 10px 30px;
+    }
+
+    .feature {
+      padding: 20px 60px;
+    }
+
+    .features h1 {
+      font-size: 50px;
+    }
+
+    .features h2 {
+      font-size: 24px;
+    }
+
+    .features p {
+      font-size: 24px;
+      line-height: 140%;
+      padding: 0 10px;
+    }
+  }
+
+  .portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+  }
+
+  .portfolio h1 {
+    font-family: saira semi condensed, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 28px;
+  }
+
+  .portfolio img {
+    width: 100%;
+  }
+
+  .portfolio .about {
+    color: white;
+    font-family: saira, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 20px 20px 0;
+  }
+
+  .portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+  }
+
+  .portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+  }
+
+  .project:nth-of-type(even) {
+    background-color: #29a6dc;
+  }
+
+
+
+  @media (orientation: landscape) {
+
+    .web,
+    .about {
+      width: 50%;
+      float: left;
+    }
+
+    .web img {
+      display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+      float: right;
+    }
+  }
+
+  @media (min-width: 760px) and (orientation: portrait) {
+    .portfolio h1 {
+      font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+      font-size: 28px;
+      border-bottom: 2px solid white;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      text-indent: 40px;
+    }
+
+    .portfolio .about p {
+      font-size: 20px;
+      padding-left: 40px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 1024px) and (orientation: landscape) {
+    .portfolio h1 {
+      font-size: 44px;
+    }
+
+    .portfolio .about h2 {
+      font-size: 28px;
+      border-bottom: 2px solid white;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      text-indent: 40px;
+    }
+
+    .portfolio .about p {
+      font-size: 20px;
+      padding-left: 40px;
+    }
+
+    .project {
+      margin-bottom: 40px;
+      max-width: 1600px;
+      margin: 0 auto 20px;
+    }
+
+    @media (orientation: landscape) and (min-width: 1366px) {
+      .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+      }
+
+      .portfolio .about h2 {
+        font-size: 34px;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+        padding-top: 50px;
+        text-indent: 40px;
+      }
+
+      .portfolio .about p {
+        font-size: 25px;
+        padding-left: 40px;
+        line-height: 180%;
+      }
+
+      .project {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+
+  .slogan {
+    text-align: center;
+    background-image: url(../images/mottojord.jpg);
+    background-size: cover;
+    background-position: 70% 90%;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .slogan h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .slogan p {
+    font-family: "Saira", sans-serif;
+    font-size: 18px;
+  }
+
+  .slogan p.author {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .slogan .bg {
+    padding: 30px 10px;
+    background-color: rgba(103, 110, 116, 0.5);
+    /*  #003f72*/
+  }
+
+  @media (orientation: landscape) {
+    .slogan p {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .slogan .bg {
+      padding: 50px 10px;
+    }
+
+    .slogan h1 {
+      font-size: 48px;
+      margin-bottom: 35px;
+    }
+
+    .slogan p {
+      font-size: 26px;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .slogan p.author {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .slogan .bg {
+      padding: 80px 10px;
+    }
+
+    .slogan h1 {
+      font-size: 60px;
+      margin-bottom: 55px;
+    }
+
+    .slogan p {
+      font-size: 40px;
+      width: 50%;
+    }
+
+    .slogan p.author {
+      margin-top: 40px;
+      font-size: 26px;
+    }
+  }
+
+  /* hobby */
+  .hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .hobby .item {
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .hobby h1 {
+    padding: 20px;
+    font-family: saira semi condensed;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+  .hobby .item p {
+    font-family: saira, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    /* line-height: 25vh; */
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .hobby .item:nth-of-type(1) {
+    background-image: url(/images/hobby12.jpg);
+  }
+
+  .hobby .item:nth-of-type(2) {
+    background-image: url(/images/hobby11.jpg);
+  }
+
+  .hobby .item:nth-of-type(3) {
+    background-image: url(/images/hobby14.jpg);
+  }
+
+  .hobby .item:nth-of-type(4) {
+    background-image: url(/images/hobby15.jpg);
+  }
+
+  @media (min-width: 533px) {
+    .hobby .item {
+      float: left;
+      width: 50%;
+      height: 40vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .hobby h1 {
+      font-size: 48px;
+    }
+
+    .hobby .item p {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hobby .item p {
+      line-height: 40vh;
+      opacity: 0;
+      padding: 0;
+      transition: 1s;
+    }
+  }
+
+  .hobby .item:hover p {
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .hobby .item {
+    background-size: 100%;
+    transition: 1s;
+  }
+
+  .hobby .item:hover {
+    background-size: 130%;
+  }
+
+  @media (min-width: 1600px) {
+    .hobby h1 {
+      font-size: 60px;
+      margin-top: 50px;
+      margin-bottom: 45px;
+
+    }
+
+    .hobby .item p {
+      font-size: 40px;
+    }
+  }
+
+  /* sekcja kontakt */
+
+  .contact {
+    background-color: #000;
+    font-family: saira;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .contact .wrap {
+    padding-top: 20px;
+  }
+
+  .contact h1 {
+    font-family: saira semi condensed;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .contact input,
+  .contact button,
+  .contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-family: saira;
+  }
+
+  .contact input {
+    height: 36px;
+  }
+
+  .contact textarea {
+    height: 120px;
+  }
+
+  .contact button {
+    font-size: 20px;
+    line-height: 50px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .contact button:hover {
+    color: black;
+    background-color: #fff;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .contact .socials {
+    padding: 10px;
+    font-size: 0;
+  }
+
+  .contact .social {
+    color: white;
+    padding-top: 15px;
+  }
+
+  .contact img {
+    float: left;
+  }
+
+  .contact .social span {
+    line-height: 72px;
+    padding-left: 10px;
+    font-size: 13px;
+    float: left;
+  }
+
+
+
+  @media (min-width:640px) {
+    .contact .social {
+      width: 50%;
+      display: inline-block;
+    }
+
+    .contact .social span {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .contact .wrap {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+
+    .contact .social span {
+      font-size: 13px;
+    }
+
+    .contact .social span:hover {
+      font-size: 18px;
+      transition: .3s;
+    }
+
+    .contact form,
+    .contact .socials {
+      float: left;
+      width: 50%;
+      padding-left: 20px;
+    }
+
+    .kurwa1,
+    .kurwa2 {
+      padding-left: 20px;
+    }
+  }
+
+  footer {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #29a6dc;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+  }
+
+  header button:hover a {
+    color: black;
+  }
+
+  header button:hover {
+    background-color: #fff;
+    display: inline-block;
+  }
+}
